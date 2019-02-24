@@ -3,6 +3,7 @@ body {
   overflow-x: hidden;
   color: white;
   height: 300vh;
+  scroll-behavior: smooth;
 }
 .navbar {
   position: fixed;
@@ -16,18 +17,32 @@ body {
   display: flex;
   flex-direction: row;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .navbar .nav {
     display: flex;
     flex-direction: column;
   }
   .navbar .nav li {
-    width: 100vw;
+    width: 100%;
+    background-color: black;
   }
-  .navbar-toggle-icon {
-    color: white !important;
+  .navbar {
+    padding: 0px;
+  }
+  .navbar .navbar-brand {
+    padding-bottom: 0px;
+    padding-left: 5px;
   }
 }
+/*
+.navbar .navbar-brand:hover {
+  opacity: 0;
+}
+.navbar .navbar-brand:hover::after {
+  content: "Join!"
+  color: white;
+}
+*/
 .spacer {
   height: 7vh;
 }
@@ -69,6 +84,7 @@ input[type="text"], button {
   margin-top: 5vh;
   height: 6vh;
   font-size: 3vh;
+  min-width: 170px;
 }
 .first-img {
   width: 55%;
@@ -83,4 +99,22 @@ input[type="text"], button {
   font-size: 7px;
   text-align: center;
   width: 20vw;
+}
+.text-primary {
+  font-size: 30px;
+  opacity: .7;
+}
+.text-primary:hover {
+  opacity:1;
+}
+.navbar-toggler {
+  -webkit-user-select: none;
+  margin-top: 0px;
+}
+
+:target:before {
+content:"";
+display:block;
+height:300px; /* fixed header height*/
+margin:-300px 0 0; /* negative fixed header height */
 }
