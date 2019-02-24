@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<div class="row">
+  <div class="col-sm-8">
+    <img src='/static/main_page_img.png'>
+  </div>
+  <div class="col-sm-4">
+    <div class="col">
+      <input type="text" placeholder="Name*">
+      <input type="text" placeholder="Zip*">
+      <input type="text" placeholder="Cell Phone">
+      <button type="button" class="btn btn-outline-danger">Join The Movement</button>
+
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-8 text-center">
+    <p>“Everybody should learn to program a computer
+      because it teaches you how to think.”</p>
+    <p>—Steve Jobs</p>
+  </div>
+  <div class="col-sm-4 text-center">
+    <p class="disclaimer">By providing your cell phone number you consent to receive periodic
+    updates from Newark Kids Code. Text HELP for help, STOP to end. Msg &
+    Data rates may apply.</p>
+</div>
+{% endblock %}
