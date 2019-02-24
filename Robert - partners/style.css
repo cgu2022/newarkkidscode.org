@@ -1,0 +1,97 @@
+div.message {
+    position: fixed;
+    bottom: 55vh;
+    right: 15vw;
+    width: 30vw;
+    border: 3px solid #000000;
+    color: white; 
+    font-size: 20px;
+    font-family: Verdana; 
+    text-align: justify;
+}
+
+div.NJCSSAIMG {
+    margin-bottom: 20%;
+    height: auto;
+    width: 25%;
+    margin-right: 75%;
+}
+
+div.StrategicTitle {
+    position: fixed;
+    color: white; 
+    font-family: Verdana;
+    left: 2.5vw;
+    bottom: 65vh;
+    font-size: 25px;
+}
+
+div.NewarkBOE {
+    position: fixed;
+    bottom: 15vh;
+    max-width: 100%;
+    max-height: 100%;
+    left: 35vw;
+}
+
+div.NJIT {
+    position: fixed;
+    bottom: 30vh;
+    left: 5vw;
+}
+
+.navbar {
+  position: fixed;
+  height: 7vh;
+  z-index: 999;
+  /*opacity: .7;*/
+  width: 100vw;
+  background-color: black;
+}
+.navbar .nav {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 768px) {
+  .navbar .nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar .nav li {
+    width: 100vw;
+  }
+  .navbar-toggle-icon {
+    color: white !important;
+  }
+}
+.spacer {
+  height: 7vh;
+}
+.navbar .nav li a{
+  margin-right: auto;
+  margin-left: auto;
+  width: auto;
+  border: 1px solid rgb(22,127,251);
+  padding: 3px;
+  text-align: center;
+  transition: .3s;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.navbar .nav {
+  display: flex;
+  justify-content: space-around;
+}
+.nav {
+  width: 100%;
+}
+.navbar .nav li:hover a{
+  text-decoration: none !important;
+  background-color: rgb(22,127,251);
+  color: white;
+  transition: .3s;
+}
+.nav-img {
+  height: 6vh;
+  width: auto;
+}
