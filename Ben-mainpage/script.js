@@ -22,3 +22,5 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+$(document).ready(setTimeout($(".active").addClass("active"), 3000));

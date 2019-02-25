@@ -10,6 +10,6 @@ Special features:
 
 
 Problems:
-  -Since the navbar is fixed, whenever links are clicked they overlap with the navbar (they go under the navbar). Attempts to offset the links have not worked.
   -Some page compression issues.
-  -Form does not do anything yet.
+  -Main page form does not do anything yet.
+  -active class will not stick on load.
