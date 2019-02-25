@@ -2,7 +2,6 @@ body {
   background-color: black;
   overflow-x: hidden;
   color: white;
-  height: 300vh;
   scroll-behavior: smooth;
 }
 .navbar {
@@ -117,4 +116,32 @@ content:"";
 display:block;
 height:300px; /* fixed header height*/
 margin:-300px 0 0; /* negative fixed header height */
+}
+
+#get-involved {
+
+}
+
+#get-involved .row:first-child input[type="text"] {
+  height: 5vh;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+div.text-center.button button{
+  margin-left: 40vw;
+}
+
+.align-self-center {
+  padding-top: 10%;
+}
+
+#popup {
+  position: absolute;
+  top: -10vh;
+  left: 25vw;
+  width: 50vw;
+  text-align: center;
+  z-index: 10;
+  opacity: 0;
 }

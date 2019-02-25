@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Newark Kids Code</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/style.css">
+    <!-- Airtable -->
+    <script src="airtable.browser.js"></script>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50" id="body">
+    <div id="popup">
+      <div class="alert alert-success text-center">
+        <strong>Success!</strong> Your information has been submitted!
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-md navbar-fixed">
+      <a class="navbar-brand" href="#body"><img class="nav-img" src="static/main_page_img.png"></a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <i class="fas fa-bars text-primary"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="../Ben-mainpage/main.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Ben-mainpage/get-involved.html">Get Involved</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="..\Robert - partners\NKCStrategicPartners.html">Strategic Partners</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="..\Robert%20-%20Videos\NKCVids.html">Videos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Donate</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="spacer"></div>
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6 text-center">
+        Newark Kids Code is powered by dedicated volunteer coding instructors who generously donate their special skills, talents, and gifts. But to get  involved you don’t need to know how to code.
+      </div>
+    </div>
+    <form method="" action="" id="get-involved">
+      <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-5 align-items-center">
+          <div class="row align-self-center text-center">
+            <h3 class="mx-auto">Please Fill In Your Information</h3>
+            <div class="col">
+              <input type="text" placeholder="First Name" id="fname">
+              <input type="text" placeholder="Last Name" id="lname">
+              <input type="text" placeholder="Address" id="address">
+              <input type="text" placeholder="City" id="city">
+            </div>
+            <div class="col">
+              <input type="text" placeholder="State" id="state">
+              <input type="text" placeholder="Zip Code" id="zc">
+              <input type="text" placeholder="Home Phone" id="hphone">
+              <input type="text" placeholder="Work Phone" id="wphone">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 p-3">
+          <h3>Volunteer Opportunities</h3>
+          <h5>Best Time To Contact You</h5>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="contact" value="Morning">Morning
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="contact" value="Afternoon">Afternoon
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="contact" value="Evening">Evening
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="contact" value="Weekends">Weekends
+            </label>
+          </div>
+          <h5>Please Select Your Volunteer Opportunities</h5>
+          <div class="row">
+            <div class="col">
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="Coding Instructor" name="roles">Coding Instructor
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="Guest Speaker" name="roles">Guest Speaker
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="Weekends" name="roles">Weekends
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="Sponsor Event" name="roles">Sponsor Event
+                </label>
+              </div>
+              </div>
+              <div class="col">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="Newark Kids Code Ambassador" name="roles">Newark Kids Code Ambassador
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="Trip Chaperone" name="roles">Trip Chaperone
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="Setting Up/Breaking Down Class" name="roles">Setting Up/Breaking Down Class
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center justify-content-center">
+          <button type="button" class="btn btn-outline-success" id="sing-up-btn">Sign Up</button>
+        </div>
+      </form>
+    <script src="script.js"></script>
+    <script src="get-involved.js"></script>
+  </body>
+</html>
