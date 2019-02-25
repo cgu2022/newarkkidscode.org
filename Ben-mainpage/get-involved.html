@@ -14,9 +14,14 @@
     <script src="airtable.browser.js"></script>
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50" id="body">
-    <div id="popup">
+    <div id="s-popup">
       <div class="alert alert-success text-center">
         <strong>Success!</strong> Your information has been submitted!
+      </div>
+    </div>
+    <div id="e-popup">
+      <div class="alert alert-danger text-center">
+        <strong>Form not submitted.</strong> You did not fill out all the information fields.
       </div>
     </div>
     <nav class="navbar navbar-expand-md navbar-fixed">
@@ -63,41 +68,63 @@
             <div class="col">
               <input type="text" placeholder="First Name" id="fname">
               <input type="text" placeholder="Last Name" id="lname">
-              <input type="text" placeholder="Address" id="address">
+              <input type="text" placeholder="Street" id="address">
               <input type="text" placeholder="City" id="city">
             </div>
             <div class="col">
               <input type="text" placeholder="State" id="state">
               <input type="text" placeholder="Zip Code" id="zc">
-              <input type="text" placeholder="Home Phone" id="hphone">
-              <input type="text" placeholder="Work Phone" id="wphone">
+              <input type="text" placeholder="Email" id="email">
+              <input type="text" placeholder="Cell Phone" id="cphone">
             </div>
           </div>
         </div>
         <div class="col-sm-6 p-3">
           <h3>Volunteer Opportunities</h3>
-          <h5>Best Time To Contact You</h5>
-          <div class="form-check">
-            <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="contact" value="Morning">Morning
-            </label>
+          <div class="row">
+            <div class="col">
+              <h6>Best Time To Contact You</h6>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="contact" value="Morning">Morning
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="contact" value="Afternoon">Afternoon
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="contact" value="Evening">Evening
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="contact" value="Weekends">Weekends
+                </label>
+              </div>
+            </div>
+            <div class="col">
+              <h6>Preferred Contact Method</h6>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="contact-method" value="Call">Call
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="contact-method" value="Text">Text
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="contact-method" value="Email">Email
+                </label>
+              </div>
+            </div>
           </div>
-          <div class="form-check">
-            <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="contact" value="Afternoon">Afternoon
-            </label>
-          </div>
-          <div class="form-check">
-            <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="contact" value="Evening">Evening
-            </label>
-          </div>
-          <div class="form-check">
-            <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="contact" value="Weekends">Weekends
-            </label>
-          </div>
-          <h5>Please Select Your Volunteer Opportunities</h5>
+          <h6>Please Select Your Volunteer Opportunities</h6>
           <div class="row">
             <div class="col">
               <div class="form-check">
