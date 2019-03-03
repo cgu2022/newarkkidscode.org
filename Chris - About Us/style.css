@@ -1,0 +1,95 @@
+﻿body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.jumbotron{
+
+}
+
+.center
+{
+    text-align: center;
+}
+
+.need {
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(NEED.jpg);
+    background-position: center;
+    height: 120vh;
+    background-size: cover;
+    position: relative;
+}
+
+.need-d {
+    width: 25%;
+    height: 13%;
+    background: rgb(128, 128, 128);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.need-h {
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    color: white;
+    font-size: 5em;
+    letter-spacing: -0.01em;
+}
+
+#one {
+    background-image: linear-gradient(to bottom, #ddd6f3, #faaca8);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.need-bot {
+    color: #0048ff;
+    margin: auto;
+    width: 80%;
+    line-height: 1.3;
+}
+.mission {
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(MISSION.jpg);
+    background-position: center;
+    height: 120vh;
+    background-size: cover;
+    position: relative;
+}
+
+.mission-d {
+    width: 50%;
+    height: 15%;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.mission-h {
+    /*background-image: linear-gradient(to left, #777dff 0px, #f154ff 200px, #f0357c 400px),linear-gradient(to right, #777dff 0px, #497ce2 200px, #37bdde 400px);
+    background-position: top left, top right;
+    background-size: 51% 100%;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;*/
+    background-position: top left, top right;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to left, #777dff, #f154ff, #f0357c ), linear-gradient(to right, #777dff, #497ce2, #37bdde );
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.mission-bot {
+    color: #0048ff;
+}
+
+#two {
+    background-image: linear-gradient(to right, #654ea3, #eaafc8);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}

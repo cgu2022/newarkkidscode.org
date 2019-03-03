@@ -1,0 +1,80 @@
+﻿
+.navbar {
+    position: fixed;
+    height: 7vh;
+    z-index: 999;
+    /*opacity: .7;*/
+    width: 100vw;
+    background-color: black;
+}
+
+    .navbar .nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+@media screen and (max-width: 767px) {
+    .navbar .nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .navbar .nav li {
+            width: 100%;
+            background-color: black;
+        }
+
+    .navbar {
+        padding: 0px;
+    }
+
+        .navbar .navbar-brand {
+            padding-bottom: 0px;
+            padding-left: 5px;
+        }
+}
+/*
+.navbar .navbar-brand:hover {
+  opacity: 0;
+}
+.navbar .navbar-brand:hover::after {
+  content: "Join!"
+  color: white;
+}
+*/
+.spacer {
+    height: 7vh;
+}
+
+.navbar .nav li a {
+    margin-right: auto;
+    margin-left: auto;
+    width: auto;
+    border: 1px solid rgb(22,127,251);
+    padding: 3px;
+    text-align: center;
+    transition: .3s;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar .nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav {
+    width: 100%;
+}
+
+.navbar .nav li:hover a {
+    text-decoration: none !important;
+    background-color: rgb(22,127,251);
+    color: white;
+    transition: .3s;
+}
+
+.nav-img {
+    height: 6vh;
+    width: auto;
+}
