@@ -56,7 +56,7 @@
 }
 .mission {
     background-repeat: no-repeat;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(MISSION.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(MISSION.jpg);
     background-position: center;
     height: 120vh;
     background-size: cover;
@@ -92,4 +92,17 @@
     background-image: linear-gradient(to right, #654ea3, #eaafc8);
     padding-top: 5%;
     padding-bottom: 5%;
+}
+
+.vision {
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(VISION.jpg);
+    background-position: center;
+    height: 120vh;
+    background-size: cover;
+    position: relative;
+}
+
+.vision-d {
+    background: #ffcc00;
 }
