@@ -29,6 +29,7 @@
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
+    border-radius: 5px;
 }
 
 .need-h {
@@ -90,8 +91,8 @@
 
 #two {
     background-image: linear-gradient(to right, #654ea3, #eaafc8);
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 7%;
+    padding-bottom: 7%;
 }
 
 .vision {
@@ -104,5 +105,56 @@
 }
 
 .vision-d {
-    background: #ffcc00;
+    background: linear-gradient(to right, #fc4a1a, #f7b733);
+    width: 40%;
 }
+
+.vision-h {
+    color: #28A745;
+}
+
+#three {
+    background-image: linear-gradient(to right, #9cecfb, #65c7f7, #0052d4);
+    padding-top: 7%;
+    padding-bottom: 7%;
+    height: 100vh;
+}
+
+.vision-bot {
+    font-size: 72px;
+    background-repeat: repeat-x;
+    background-position: 0 1.06em;
+    background-size: 10px 9px;
+    color: #f2f3f8;
+}
+
+    .vision-bot:first-child {
+        margin-bottom: 17%
+    }
+
+.text-js{
+  opacity: 0;
+}
+.cursor{
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: -5px;
+  width: 2px;
+  /* Change colour of Cursor Here */
+  background-color: white;
+  z-index: 1;
+  animation: flash 0.5s none infinite alternate;
+}
+@keyframes flash{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+
+
