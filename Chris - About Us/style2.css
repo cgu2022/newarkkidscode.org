@@ -52,7 +52,7 @@
 .need-bot {
     background-position: top left;
     color: transparent;
-    background: linear-gradient(4, red, #faaca8, #1462d8);
+    background: linear-gradient(-90deg, red, #faaca8, #1462d8);
     -webkit-background-clip: text;
     margin: auto;
     width: 80%;
