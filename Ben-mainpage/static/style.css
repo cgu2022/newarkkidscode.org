@@ -2,7 +2,6 @@ body {
   background-color: black;
   overflow-x: hidden;
   color: white;
-  height: 300vh;
   scroll-behavior: smooth;
 }
 .navbar {
@@ -70,6 +69,10 @@ body {
   color: white;
   transition: .3s;
 }
+.navbar .nav li a.active {
+  background-color: rgb(22,127,251) !important;
+  color: white !important;
+}
 .nav-img {
   height: 6vh;
   width: auto;
@@ -83,7 +86,7 @@ input[type="text"], button {
   border-radius: 5px;
   margin-top: 5vh;
   height: 6vh;
-  font-size: 3vh;
+  font-size: 2.5vh;
   min-width: 170px;
 }
 .first-img {
@@ -117,4 +120,36 @@ content:"";
 display:block;
 height:300px; /* fixed header height*/
 margin:-300px 0 0; /* negative fixed header height */
+}
+
+#get-involved {
+
+}
+
+#get-involved .row:first-child input[type="text"] {
+  height: 5vh;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+div.text-center.button button{
+  margin-left: 40vw;
+}
+
+.align-self-center {
+  padding-top: 10%;
+}
+
+#s-popup, #e-popup {
+  position: absolute;
+  top: -10vh;
+  left: 25vw;
+  width: 50vw;
+  text-align: center;
+  z-index: 10;
+  opacity: 0;
+}
+
+h6 {
+  margin-top: 10px;
 }

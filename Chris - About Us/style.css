@@ -1,0 +1,156 @@
+﻿body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.center
+{
+    text-align: center;
+}
+
+.need {
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(NEED.jpg);
+    background-position: center;
+    height: 120vh;
+    background-size: cover;
+    position: relative;
+}
+
+.need-d {
+    width: 25%;
+    height: 13%;
+    background: rgb(128, 128, 128);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+}
+
+.need-h {
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    color: white;
+    font-size: 5em;
+    letter-spacing: -0.01em;
+}
+
+#one {
+    background-image: linear-gradient(to bottom, #ddd6f3, #faaca8);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.need-bot {
+    color: #0048ff;
+    margin: auto;
+    width: 80%;
+    line-height: 1.4;
+}
+.mission {
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(MISSION.jpg);
+    background-position: center;
+    height: 120vh;
+    background-size: cover;
+    position: relative;
+}
+
+.mission-d {
+    width: 50%;
+    height: 15%;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.mission-h {
+    /*background-image: linear-gradient(to left, #777dff 0px, #f154ff 200px, #f0357c 400px),linear-gradient(to right, #777dff 0px, #497ce2 200px, #37bdde 400px);
+    background-position: top left, top right;
+    background-size: 51% 100%;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;*/
+    background-position: top left, top right;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to left, #777dff, #f154ff, #f0357c ), linear-gradient(to right, #777dff, #497ce2, #37bdde );
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.mission-bot {
+    color: #0048ff;
+}
+
+#two {
+    background-image: linear-gradient(to right, #654ea3, #eaafc8);
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+.vision {
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(VISION.jpg);
+    background-position: center;
+    height: 120vh;
+    background-size: cover;
+    position: relative;
+}
+
+.vision-d {
+    background: linear-gradient(to right, #fc4a1a, #f7b733);
+    width: 40%;
+}
+
+.vision-h {
+    color: #28A745;
+}
+
+#three {
+    background-image: linear-gradient(to right, #9cecfb, #65c7f7, #0052d4);
+    padding-top: 11%;
+    padding-bottom: 7%;
+    height: 100vh;
+}
+
+.vision-bot {
+    font-size: 72px;
+    background-repeat: repeat-x;
+    background-position: 0 1.06em;
+    background-size: 10px 9px;
+    color: #f2f3f8;
+}
+
+    .vision-bot:first-child {
+        margin-bottom: 17%
+    }
+
+.text-js{
+  opacity: 0;
+}
+.cursor{
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: -5px;
+  width: 2px;
+  /* Change colour of Cursor Here */
+  background-color: white;
+  z-index: 1;
+  animation: flash 0.5s none infinite alternate;
+}
+@keyframes flash{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+
+
