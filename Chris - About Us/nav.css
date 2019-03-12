@@ -17,7 +17,7 @@
 
 
 .nav-link {
-    background-image: linear-gradient(to left, #777dff, #f154ff, #f0357c );
+    background-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
     -webkit-background-clip: text;
     color: transparent;
 }
