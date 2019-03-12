@@ -1,16 +1,31 @@
 ﻿.navbar {
     position: fixed;
-    height: 7vh;
+    min-height: 9vh;
     z-index: 999;
     /*opacity: .7;*/
     width: 100vw;
     background-color: black;
+    transition: top 0.4s;
 }
 
-    .navbar .nav {
-        display: flex;
-        flex-direction: row;
-    }
+
+.nav-item {
+    /*background: linear-gradient(to right, #6190e8, #a7bfe8);*/
+    background: linear-gradient(to right, #000428, #004e92);
+    color: black;
+}
+
+
+.nav-link {
+    background-image: linear-gradient(to left, #777dff, #f154ff, #f0357c );
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.navbar .nav {
+    display: flex;
+    flex-direction: row;
+}
 
 @media screen and (max-width: 767px) {
     .navbar .nav {
@@ -49,7 +64,7 @@
     margin-right: auto;
     margin-left: auto;
     width: auto;
-    border: 1px solid rgb(22,127,251);
+    /*border: 1px solid rgb(22,127,251);*/
     padding: 3px;
     text-align: center;
     transition: .3s;

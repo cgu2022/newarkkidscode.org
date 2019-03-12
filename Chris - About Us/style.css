@@ -1,6 +1,7 @@
 ﻿body {
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 .center
@@ -127,6 +128,8 @@
     .vision-bot:first-child {
         margin-bottom: 17%
     }
+
+/*Animation Stuff*/
 
 .text-js{
   opacity: 0;
