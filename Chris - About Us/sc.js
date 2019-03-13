@@ -20,15 +20,26 @@ function Utils() {
 
 Utils.prototype = {
     constructor: Utils,
-    isElementInView: function (element, fullyInView) {
+    isElementInView: function (element, fullyInView, offseter) {
         var pageTop = $(window).scrollTop();
         var pageBottom = pageTop + $(window).height();
         var elementTop = $(element).offset().top;
-        var elementBottom = elementTop + $(element).height();
+        var elementBottom = elementTop + $(element).height() + offseter;
 
-        if (fullyInView === true) {
+        console.clear()
+        console.log(pageTop)
+        console.log(pageBottom)
+        console.log(elementTop)
+        console.log(elementBottom)
+
+        if (fullyInView === 2) { //The moment it sees the element
             return ((pageTop < elementTop) && (pageBottom > elementBottom));
-        } else {
+        }
+        else if (fullyInView === 1) //Just At least the full element
+        {
+            return (pageBottom > elementBottom);
+        }
+        else { //After
             return ((elementTop <= pageBottom) && (elementBottom >= pageTop));
         }
     }
@@ -65,7 +76,7 @@ function autoType(elementClass, typingSpeed) {
 
 var von = false;
 $(window).scroll(function () {
-    isElementInView = Utils.isElementInView($('#three'), false);
+    isElementInView = Utils.isElementInView($('.text-js'), 1, 15);
     if (isElementInView && !von) {
         autoType(".type-js", 100);
         von = true;
