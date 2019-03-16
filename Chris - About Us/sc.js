@@ -1,4 +1,19 @@
-﻿
+﻿/*Navbar Stuff*/
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+    } else {
+        var h = -$('#navbar').height()-20;
+        console.log(h);
+        document.getElementById("navbar").style.top = h.toString() + "px";
+    }
+    prevScrollpos = currentScrollPos;
+}
+
+/*Other Stuff*/
 function Utils() {
 
 }
@@ -11,10 +26,17 @@ Utils.prototype = {
         var elementTop = $(element).offset().top;
         var elementBottom = elementTop + $(element).height();
 
+        console.clear()
+        console.log(pageTop)
+        console.log(pageBottom)
+        console.log(elementTop)
+        console.log(elementBottom)
+
         if (fullyInView === true) {
             return ((pageTop < elementTop) && (pageBottom > elementBottom));
-        } else {
-            return ((elementTop <= pageBottom) && (elementBottom >= pageTop));
+        }
+          else {
+        return((elementTop <= pageBottom) && (elementBottom >= pageTop));
         }
     }
 };
