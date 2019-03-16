@@ -1,4 +1,4 @@
-﻿/*Navbar Stuff*/
+/*Navbar Stuff*/
 
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
@@ -20,26 +20,15 @@ function Utils() {
 
 Utils.prototype = {
     constructor: Utils,
-    isElementInView: function (element, fullyInView, offseter) {
+    isElementInView: function (element, fullyInView) {
         var pageTop = $(window).scrollTop();
         var pageBottom = pageTop + $(window).height();
         var elementTop = $(element).offset().top;
-        var elementBottom = elementTop + $(element).height() + offseter;
+        var elementBottom = elementTop + $(element).height();
 
-        console.clear()
-        console.log(pageTop)
-        console.log(pageBottom)
-        console.log(elementTop)
-        console.log(elementBottom)
-
-        if (fullyInView === 2) { //The moment it sees the element
+        if (fullyInView === true) {
             return ((pageTop < elementTop) && (pageBottom > elementBottom));
-        }
-        else if (fullyInView === 1) //Just At least the full element
-        {
-            return (pageBottom > elementBottom);
-        }
-        else { //After
+        } else {
             return ((elementTop <= pageBottom) && (elementBottom >= pageTop));
         }
     }
@@ -76,7 +65,7 @@ function autoType(elementClass, typingSpeed) {
 
 var von = false;
 $(window).scroll(function () {
-    isElementInView = Utils.isElementInView($('.text-js'), 1, 15);
+    isElementInView = Utils.isElementInView($('#three'), false);
     if (isElementInView && !von) {
         autoType(".type-js", 100);
         von = true;
