@@ -4,14 +4,7 @@ body {
   color: white;
   scroll-behavior: smooth;
 }
-.navbar {
-  position: fixed;
-  height: 7vh;
-  z-index: 999;
-  /*opacity: .7;*/
-  width: 100vw;
-  background-color: black;
-}
+
 .navbar .nav {
   display: flex;
   flex-direction: row;
@@ -44,38 +37,6 @@ body {
 */
 .spacer {
   height: 7vh;
-}
-.navbar .nav li a{
-  margin-right: auto;
-  margin-left: auto;
-  width: auto;
-  border: 1px solid rgb(22,127,251);
-  padding: 3px;
-  text-align: center;
-  transition: .3s;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.navbar .nav {
-  display: flex;
-  justify-content: space-around;
-}
-.nav {
-  width: 100%;
-}
-.navbar .nav li:hover a{
-  text-decoration: none !important;
-  background-color: rgb(22,127,251);
-  color: white;
-  transition: .3s;
-}
-.navbar .nav li a.active {
-  background-color: rgb(22,127,251) !important;
-  color: white !important;
-}
-.nav-img {
-  height: 6vh;
-  width: auto;
 }
 .col {
   display: flex;
