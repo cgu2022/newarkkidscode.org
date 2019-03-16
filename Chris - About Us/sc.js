@@ -1,4 +1,4 @@
-﻿/*Navbar Stuff*/
+/*Navbar Stuff*/
 
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
@@ -20,23 +20,16 @@ function Utils() {
 
 Utils.prototype = {
     constructor: Utils,
-    isElementInView: function (element, fullyInView, offseter) {
+    isElementInView: function (element, fullyInView) {
         var pageTop = $(window).scrollTop();
         var pageBottom = pageTop + $(window).height();
         var elementTop = $(element).offset().top;
-        var elementBottom = elementTop + $(element).height() + offseter;
-
-        console.clear()
-        console.log(pageTop)
-        console.log(pageBottom)
-        console.log(elementTop)
-        console.log(elementBottom)
+        var elementBottom = elementTop + $(element).height();
 
         if (fullyInView === true) {
             return ((pageTop < elementTop) && (pageBottom > elementBottom));
-        }
-          else {
-        return((elementTop <= pageBottom) && (elementBottom >= pageTop));
+        } else {
+            return ((elementTop <= pageBottom) && (elementBottom >= pageTop));
         }
     }
 };
@@ -72,7 +65,7 @@ function autoType(elementClass, typingSpeed) {
 
 var von = false;
 $(window).scroll(function () {
-    isElementInView = Utils.isElementInView($('.text-js'), 1, 15);
+    isElementInView = Utils.isElementInView($('#three'), false);
     if (isElementInView && !von) {
         autoType(".type-js", 100);
         von = true;
@@ -80,8 +73,8 @@ $(window).scroll(function () {
 });
 
 //$(document).ready(function(){
-//  // Now to start autoTyping just call the autoType function with the
+//  // Now to start autoTyping just call the autoType function with the 
 //  // class of outer div
-//  // The second paramter is the speed between each letter is typed.
+//  // The second paramter is the speed between each letter is typed.   
 //  autoType(".type-js",200);
 //});

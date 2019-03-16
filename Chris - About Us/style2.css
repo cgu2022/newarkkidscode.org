@@ -1,4 +1,4 @@
-﻿body {
+body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -19,6 +19,7 @@
     height: 120vh;
     background-size: cover;
     position: relative;
+    background-attachment: fixed;
 }
 
 .need-d {
@@ -39,7 +40,7 @@
     left: 50%;
     margin: auto;
     color: white;
-    font-size: 3.5em;
+    font-size: 5em;
     letter-spacing: -0.01em;
 }
 
@@ -93,9 +94,9 @@
 
 #two {
     background-color: black;
-    padding-top: 9%;
-    padding-bottom: 9%;
-    min-height: 110vh;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    min-height: 100vh;
 }
 
 .mission-bot {
@@ -114,8 +115,8 @@
     height: 120vh;
     background-size: cover;
     position: relative;
-    background-attachment: fixed;
     border-radius: 0rem;
+    background-attachment: fixed;
 }
 
 .vision-d {
@@ -169,25 +170,24 @@ blockquote {
         color: #6c757d;
     }
     blockquote footer {
-        color: #212529;
-
+        color: #212529
     }
 
 /*Typing Animation Stuff*/
 .text-js{
   opacity: 0;
 }
-.cursor {
-    display: block;
-    position: absolute;
-    height: 50%;
-    top: 0;
-    right: -5px;
-    width: 2px;
-    /* Change colour of Cursor Here */
-    background-color: white;
-    z-index: 1;
-    animation: flash 0.5s none infinite alternate;
+.cursor{
+  display: block;
+  position: absolute;
+  height: 50%;
+  top: 0;
+  right: -5px;
+  width: 2px;
+  /* Change colour of Cursor Here */
+  background-color: white;
+  z-index: 1;
+  animation: flash 0.5s none infinite alternate;
 }
 @keyframes flash{
   0%{
@@ -198,46 +198,52 @@ blockquote {
   }
 }
 
+
+
+/* Edits to about us text */
 .about-us-text {
     width: 90%;
     margin-left: 5%;
     text-align: left;
+
     line-height: 1.4;
     letter-spacing: 0.01em;
 }
 
-    .about-us-text h1 {
-        font-size: 50pt;
-        background: linear-gradient(-90deg, red, #faaca8, #1462d8);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
+.about-us-text h1 {
+    font-size: 50pt;
+    
+    background: linear-gradient(-90deg, red, #faaca8, #1462d8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
-    .about-us-text h2 {
-        font-size: 42pt;
-        background: linear-gradient(-90deg, #1462d8, #faaca8, red);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
+.about-us-text h2 {
+    font-size: 42pt;
 
-    .about-us-text h3 {
-        font-size: 30pt;
-        color: #888;
-    }
+    background: linear-gradient(-90deg, #1462d8, #faaca8, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
-    .about-us-text h4 {
-        font-size: 20pt;
-        color: #aaa;
-    }
+.about-us-text h3 {
+    font-size: 30pt;
+    color: #888;
+}
 
-    .about-us-text p {
-        font-size: 16pt;
-        max-width: 80%;
-        min-width: 200px;
-        color: #666;
-    }
+.about-us-text h4 {
+    font-size: 20pt;
+    color: #aaa;
+}
+
+.about-us-text p {
+    font-size: 16pt;
+    max-width: 80%;
+    min-width: 200px;
+    color: #666;
+}
 
 .vision-paragraph {
     font-size: 20pt;
@@ -246,21 +252,21 @@ blockquote {
     text-align: left;
 }
 
-    .vision-paragraph p {
-        background: linear-gradient(to right, #8167c9, #eaafc8);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        border-left: 5px solid #eaafc8;
-        padding: 5px 15px;
-    }
+.vision-paragraph p {
+    background: linear-gradient(to right, #8167c9, #eaafc8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-left: 5px solid #eaafc8;
+    padding: 5px 15px;
+}
 
-    .vision-paragraph b {
-        background: #ffd2e5;
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
+.vision-paragraph b {
+    background: #ffd2e5;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 /* Rainbow scrollbar */
 ::-webkit-scrollbar {
@@ -270,11 +276,10 @@ blockquote {
 ::-webkit-scrollbar-track {
     background: linear-gradient(to bottom, #3a2f5a, #4d2f3b);
 }
-
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(to bottom, #8167c9, #eaafc8);
 }
 
-    ::-webkit-scrollbar-thumb:hover {
-        background: linear-gradient(to bottom, #967fd8, #eec3d5);
-    }
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #967fd8, #eec3d5);
+}
