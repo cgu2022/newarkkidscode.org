@@ -32,23 +32,11 @@ Utils.prototype = {
         console.log(elementTop)
         console.log(elementBottom)
 
-<<<<<<< HEAD
         if (fullyInView === true) {
             return ((pageTop < elementTop) && (pageBottom > elementBottom));
         }
           else {
         return((elementTop <= pageBottom) && (elementBottom >= pageTop));
-=======
-        if (fullyInView === 2) { //The moment it sees the element
-            return ((pageTop < elementTop) && (pageBottom > elementBottom));
-        }
-        else if (fullyInView === 1) //Just At least the full element
-        {
-            return (pageBottom > elementBottom);
-        }
-        else { //After
-            return ((elementTop <= pageBottom) && (elementBottom >= pageTop));
->>>>>>> d15e511afce80b90ebc6b989d343c569cfdd918b
         }
     }
 };
@@ -92,8 +80,8 @@ $(window).scroll(function () {
 });
 
 //$(document).ready(function(){
-//  // Now to start autoTyping just call the autoType function with the 
+//  // Now to start autoTyping just call the autoType function with the
 //  // class of outer div
-//  // The second paramter is the speed between each letter is typed.   
+//  // The second paramter is the speed between each letter is typed.
 //  autoType(".type-js",200);
 //});

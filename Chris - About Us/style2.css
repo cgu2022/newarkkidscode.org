@@ -170,31 +170,9 @@ blockquote {
     }
     blockquote footer {
         color: #212529;
-       
+
     }
 
-<<<<<<< HEAD
-=======
-blockquote {
-    margin-top: 30vh;
-    margin-bottom: 30vh;
-    margin-left: 10%;
-    margin-right: 10%;
-    text-align: center;
-    font-size: 48pt;
-    height: 60vh;
-}
-
-    blockquote p {
-        text-shadow: 20px 15px 50px #555, 0px 15px 50px #111;
-        color: #6c757d;
-    }
-    blockquote footer {
-        color: #212529;
-       
-    }
-
->>>>>>> d15e511afce80b90ebc6b989d343c569cfdd918b
 /*Typing Animation Stuff*/
 .text-js{
   opacity: 0;
@@ -300,6 +278,3 @@ blockquote {
     ::-webkit-scrollbar-thumb:hover {
         background: linear-gradient(to bottom, #967fd8, #eec3d5);
     }
-
-
-
