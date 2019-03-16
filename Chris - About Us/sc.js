@@ -1,4 +1,4 @@
-﻿/*Navbar Stuff*/
+/*Navbar Stuff*/
 
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {

@@ -18,4 +18,3 @@ The website for newark kids code, which can be found at https://njcssa.github.io
 - Videos             (Rob Z.)
 - Donate             (Mr. Sharif)
 ```
-
