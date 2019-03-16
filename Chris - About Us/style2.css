@@ -22,9 +22,9 @@
 }
 
 .need-d {
-    width: 100%;
+    width: 25%;
     height: 13%;
-    background: rgba(12, 12, 12, 0.527);
+    background: rgb(128, 128, 128);
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -39,7 +39,7 @@
     left: 50%;
     margin: auto;
     color: white;
-    font-size: 5em;
+    font-size: 3.5em;
     letter-spacing: -0.01em;
 }
 
@@ -67,13 +67,12 @@
     height: 120vh;
     background-size: cover;
     position: relative;
-    background-attachment: fixed;
 }
 
 .mission-d {
-    width: 100%;
+    width: 50%;
     height: 15%;
-    background: linear-gradient(to right, #0f202781, rgba(32, 58, 67, 0.479), #2c536471);
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
 }
 
 .mission-h {
@@ -93,9 +92,9 @@
 
 #two {
     background-color: black;
-    padding-top: 7%;
-    padding-bottom: 7%;
-    min-height: 100vh;
+    padding-top: 9%;
+    padding-bottom: 9%;
+    min-height: 110vh;
 }
 
 .mission-bot {
@@ -114,27 +113,27 @@
     height: 120vh;
     background-size: cover;
     position: relative;
-    background-attachment: fixed;
     border-radius: 0rem;
 }
 
 .vision-d {
-    background: linear-gradient(to right, #fc4b1a71, #f7b63370);
-    width: 100%;
+    background: linear-gradient(to right, #fc4a1a, #f7b733);
+    width: 40%;
 }
 
 .vision-h {
-    color: rgb(247, 245, 228);
+    color: #28A745;
 }
 
 #three {
     background: black;
     padding-top: 11%;
     padding-bottom: 7%;
+    height: 100vh;
 }
 
 .vision-bot {
-    font-size: 40px;
+    font-size: 72px;
     background-repeat: repeat-x;
     background-position: 0 1.06em;
     background-size: 10px 9px;
@@ -146,26 +145,25 @@
         background-position: top left, top right;
         background-size: 50% 100%;
         background-repeat: no-repeat;
-        /* background-image: linear-gradient(to left, #777dff, #f154ff, #f0357c ), linear-gradient(to right, #777dff, #497ce2, #37bdde );
-        */
-        background: #bbb;
+        background-image: linear-gradient(to left, #777dff, #f154ff, #f0357c ), linear-gradient(to right, #777dff, #497ce2, #37bdde );
         -webkit-background-clip: text;
         color: transparent;
         -webkit-text-fill-color: transparent;
-        margin-bottom: 10px;
+        margin-bottom: 17%
     }
 
 blockquote {
     margin-top: 30vh;
     margin-bottom: 30vh;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: center;
-    font-size: 30pt;
-    height: 40vh;
+    font-size: 48pt;
+    height: 60vh;
 }
 
     blockquote p {
+        text-shadow: 20px 15px 50px #555, 0px 15px 50px #111;
         color: #6c757d;
     }
     blockquote footer {
@@ -177,17 +175,17 @@ blockquote {
 .text-js{
   opacity: 0;
 }
-.cursor {
-    display: block;
-    position: absolute;
-    height: 50%;
-    top: 0;
-    right: -5px;
-    width: 2px;
-    /* Change colour of Cursor Here */
-    background-color: white;
-    z-index: 1;
-    animation: flash 0.5s none infinite alternate;
+.cursor{
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: -5px;
+  width: 2px;
+  /* Change colour of Cursor Here */
+  background-color: white;
+  z-index: 1;
+  animation: flash 0.5s none infinite alternate;
 }
 @keyframes flash{
   0%{
@@ -197,87 +195,6 @@ blockquote {
     opacity: 0;
   }
 }
-
-.about-us-text {
-    width: 90%;
-    margin-left: 5%;
-    text-align: left;
-    line-height: 1.4;
-    letter-spacing: 0.01em;
-}
-
-    .about-us-text h1 {
-        font-size: 50pt;
-        background: linear-gradient(-90deg, red, #faaca8, #1462d8);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .about-us-text h2 {
-        font-size: 42pt;
-        background: linear-gradient(-90deg, #1462d8, #faaca8, red);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .about-us-text h3 {
-        font-size: 30pt;
-        color: #888;
-    }
-
-    .about-us-text h4 {
-        font-size: 20pt;
-        color: #aaa;
-    }
-
-    .about-us-text p {
-        font-size: 16pt;
-        max-width: 80%;
-        min-width: 200px;
-        color: #666;
-    }
-
-.vision-paragraph {
-    font-size: 20pt;
-    width: 80%;
-    margin: 20px 10%;
-    text-align: left;
-}
-
-    .vision-paragraph p {
-        background: linear-gradient(to right, #8167c9, #eaafc8);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        border-left: 5px solid #eaafc8;
-        padding: 5px 15px;
-    }
-
-    .vision-paragraph b {
-        background: #ffd2e5;
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-/* Rainbow scrollbar */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: linear-gradient(to bottom, #3a2f5a, #4d2f3b);
-}
-
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, #8167c9, #eaafc8);
-}
-
-    ::-webkit-scrollbar-thumb:hover {
-        background: linear-gradient(to bottom, #967fd8, #eec3d5);
-    }
 
 
 
