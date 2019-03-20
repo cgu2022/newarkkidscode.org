@@ -5,6 +5,7 @@
     /*opacity: .7;*/
     width: 100vw;
     background-color: black;
+    /*background-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);*/
     transition: top 0.4s;
 }
 
@@ -19,7 +20,7 @@
 .nav-link {
     background-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
     -webkit-background-clip: text;
-    color: transparent;
+    color: white;
 }
 
 .navbar .nav {
@@ -83,8 +84,8 @@
 
 .navbar .nav li:hover a {
     text-decoration: none !important;
-    background-color: rgb(22,127,251);
-    color: white;
+    /*background-color: rgb(22,127,251);*/
+    color: transparent;
     transition: .3s;
 }
 

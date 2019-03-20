@@ -35,14 +35,15 @@ body {
   color: white;
 }
 */
-.spacer {
-  height: 7vh;
+.spacer-2 {
+  height: 15vh;
 }
 .col {
   display: flex;
   flex-direction: column;
 }
 input[type="text"], button {
+    display: block;
   width: 15vw;
   border-radius: 5px;
   margin-top: 5vh;
