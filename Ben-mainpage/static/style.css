@@ -81,7 +81,8 @@ body {
   display: flex;
   flex-direction: column;
 }
-input[type="text"], button {
+input:not([type=checkbox]):not([type=radio]),
+button {
   width: 15vw;
   border-radius: 5px;
   margin-top: 5vh;
@@ -126,9 +127,10 @@ margin:-300px 0 0; /* negative fixed header height */
 
 }
 
-#get-involved .row:first-child input[type="text"] {
-  height: 5vh;
+#get-involved .row:first-child input:not([type=checkbox]):not([type=radio]) {
+  height: 40px;
   margin-top: 10px;
+  padding: 15px 10px;
   font-size: 20px;
 }
 
