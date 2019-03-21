@@ -1,6 +1,6 @@
 # newarkkidscode.org
 
-The website for newark kids code, which can be found at https://njcssa.github.io/newarkkidscode.org/
+The website for newark kids code, which can be found at https://cgu2022.github.io/newarkkidscode.org/Ben-mainpage/main.html
 
   > Underscoring our mission to promote social and economic self-sufficiency for disadvantaged residents, the Urban League of Essex County is committed to exploring innovative and effective strategies to help lift people out of poverty. Given how inextricably linked skill development is with access to economic opportunity, both education and employment opportunities play key roles in helping bring our organizational goals to fruition. 
   
