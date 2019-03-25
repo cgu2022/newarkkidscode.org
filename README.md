@@ -19,7 +19,7 @@ The website for newark kids code, which can be found at https://cgu2022.github.i
 - Donate             (Mr. Sharif)
 ```
 
-##NAVBAR STUFF:
+## NAVBAR STUFF:
 
 Put this in head: 
 '''<link rel="stylesheet" href="../nav.css">
