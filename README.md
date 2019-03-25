@@ -19,14 +19,16 @@ The website for newark kids code, which can be found at https://cgu2022.github.i
 - Donate             (Mr. Sharif)
 ```
 
-## NAVBAR STUFF:
+# NAVBAR STUFF:
 
 Put this in head: 
-'''<link rel="stylesheet" href="../nav.css">
-<script src="../nav.js"></script>```
+```
+<link rel="stylesheet" href="../nav.css">
+<script src="../nav.js"></script>
+```
 
 Body:
-'''
+```
 <nav class="navbar navbar-expand-md" style="position: fixed;" id="navbar">
             <a class="navbar-brand" href="..\Ben-mainpage\main.html"><img class="nav-img" src="main_page_img.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -55,6 +57,6 @@ Body:
                 </ul>
             </div>
         </nav>
-'''
+```
 
 
