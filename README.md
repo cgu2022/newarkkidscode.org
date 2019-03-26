@@ -8,15 +8,13 @@ The website for newark kids code, which can be found at https://cgu2022.github.i
 
 # Pages
 ```
-- Home Page  (Ben S.)
-    - Receive Updates Form
-- About Us   (Chris G., revised by Gavin S.)
+By Chris G.
+-About us (revised by Gavin S.)
 - Get Involved   (Ben S.)
     - Volunteer signup form
 -Strategic Partners  (Rob Z.)
-- Shop               (Ben C.)
 - Videos             (Rob Z.)
-- Donate             (Mr. Sharif)
+- Contact Us         
 ```
 
 # NAVBAR STUFF:
@@ -55,7 +53,7 @@ Body:
                     <a class="nav-link" href="../Robert - Videos/NKCVids.html">Videos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Donate</a>
+                    <a class="nav-link" href="#">Contact Us</a>
                 </li>
             </ul>
         </div>
