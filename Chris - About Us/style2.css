@@ -83,6 +83,7 @@ body {
     background-size: 51% 100%;
     background-repeat: no-repeat;
     -webkit-background-clip: text;*/
+    position: absolute; /*added this*/
     background-position: top left, top right;
     background-size: 50% 100%;
     background-repeat: no-repeat;
@@ -90,6 +91,7 @@ body {
     -webkit-background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
+    display: inline-block; /*added this*/
 }
 
 #two {

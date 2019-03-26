@@ -2,3 +2,108 @@
 {
     background-color: black;
 }
+
+.buffer{
+    height: 1px;
+}
+
+.spacer{
+    margin-top: 7%;
+}
+
+div.format {
+    font-family: 'ABeeZee', sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h1.heading {
+    font-weight: bold;
+    font-family: 'League Script', cursive;
+    margin-left: -3.5%;
+    background-position: top left;
+    color: transparent;
+    background: linear-gradient(90deg,#af2896,#509bf5);
+    -webkit-background-clip: text;
+    display: inline-block;
+}
+
+/*hr.hrheading {
+    margin-top: 3px;
+    border-top: 1px solid white;
+}*/
+
+.gradient-box {
+    margin: 0px -5% 5vh -5%;
+    /*max-width: 50%;*/
+    position: relative;
+    box-sizing: border-box;
+    background: #000;
+    background-clip: padding-box;
+    /* !importanté */
+    border: solid 5px transparent;
+    /* !importanté */
+    border-radius: 1em;
+}
+
+    .gradient-box:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        margin: -1px;
+        /* !importanté */
+        border-radius: inherit;
+        /* !importanté */
+        background: linear-gradient(to right, red, orange);
+    }
+
+/*animation stuff*/
+div.slideIn {
+    animation-name: hide, slideIn;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    opacity: 1;
+}
+
+    div.slideIn.first {
+        left: 50px;
+        animation-delay: 0s, 0s;
+    }
+
+    div.slideIn.second {
+        left: 150px;
+        animation-delay: 0s, 1.5s;
+    }
+
+    div.slideIn.third {
+        left: 250px;
+        animation-delay: 0s, 3s;
+    }
+
+@keyframes hide {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        /*margin-left: -20%;*/
+    }
+
+
+    100% {
+        opacity: 1;
+        /*margin-left: -5%;*/
+    }
+}
