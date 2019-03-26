@@ -64,8 +64,9 @@ h1.heading {
 /*animation stuff*/
 div.slideIn {
     animation-name: hide, slideIn;
-    animation-duration: 1.5s;
+    animation-duration: 1.2s;
     animation-timing-function: ease-in;
+    /*animation-timing-function: cubic-bezier(0.000, 0.900, 0.500, 0.750);*/
     animation-iteration-count: 1;
     opacity: 1;
 }
@@ -77,12 +78,12 @@ div.slideIn {
 
     div.slideIn.second {
         left: 150px;
-        animation-delay: 0s, 1.5s;
+        animation-delay: 0s, 1.2s;
     }
 
     div.slideIn.third {
         left: 250px;
-        animation-delay: 0s, 3s;
+        animation-delay: 0s, 2.4s;
     }
 
 @keyframes hide {
