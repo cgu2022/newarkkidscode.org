@@ -3,6 +3,11 @@
     background-color: black;
 }
 
+    body ::selection {
+        color: red;
+        /*background-color: #0d3287;*/
+    }
+
 p {
     color: #363a3f;
 }
