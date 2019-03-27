@@ -2,7 +2,7 @@ body {
     /*background-color: black;*/
     background-position: center;
     background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('../GI1.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),url('../GI1.jpg');
     overflow-x: hidden;
     color: white;
     scroll-behavior: smooth;
