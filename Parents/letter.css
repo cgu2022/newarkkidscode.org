@@ -3,6 +3,10 @@
     background-color: black;
 }
 
+p {
+    color: #363a3f;
+}
+
 .buffer{
     height: 1px;
 }
@@ -15,6 +19,7 @@ div.format {
     font-family: 'ABeeZee', sans-serif;
     margin-left: 10%;
     margin-right: 10%;
+    font-size: 1.15em;
 }
 
 h1.heading {
@@ -61,29 +66,50 @@ h1.heading {
         background: linear-gradient(to right, red, orange);
     }
 
+p.genie {
+    background-position: center;
+    background: linear-gradient(to left, #4a0c96, #e0502a);
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    display: inline-block;
+    color: transparent;
+    font-weight: bold;
+}
 /*animation stuff*/
 div.slideIn {
     animation-name: hide, slideIn;
-    animation-duration: 1.2s;
+    animation-duration: 0.8s, 1s;
     animation-timing-function: ease-in;
     /*animation-timing-function: cubic-bezier(0.000, 0.900, 0.500, 0.750);*/
     animation-iteration-count: 1;
     opacity: 1;
+    margin-bottom: 2%;
 }
 
     div.slideIn.first {
-        left: 50px;
         animation-delay: 0s, 0s;
     }
 
     div.slideIn.second {
-        left: 150px;
-        animation-delay: 0s, 1.2s;
+        animation-delay: 0s, 0.5s;
     }
 
     div.slideIn.third {
-        left: 250px;
-        animation-delay: 0s, 2.4s;
+        animation-duration: 1s;
+        animation-delay: 0s, 1s;
+    }
+    div.slideIn.th4 {
+        animation-duration: 1.5s;
+        animation-delay: 0s, 1.5s;
+    }
+    div.slideIn.th5 {
+        animation-duration: 2s;
+        animation-delay: 0s, 2s;
+    }
+    div.slideIn.th6 {
+        animation-duration: 2.5s;
+        animation-delay: 0s, 2.5s;
     }
 
 @keyframes hide {
@@ -92,7 +118,7 @@ div.slideIn {
     }
 
     to {
-        opacity: 0
+        opacity: 0;
     }
 }
 
