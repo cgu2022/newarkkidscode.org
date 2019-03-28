@@ -9,11 +9,13 @@
     }
 
 p {
-    color: #363a3f;
+    /*color: #363a3f;*/
+    color: #666;
 }
 
 .buffer{
     height: 1px;
+    font-size: 0;
 }
 
 .spacer{
