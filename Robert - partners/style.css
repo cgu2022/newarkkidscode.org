@@ -1,9 +1,15 @@
 div.message {
     width: 100%;
-    color: white; 
+    color: white;
     font-size: 100%;
-    font-family: Verdana; 
+    font-family: Verdana;
     text-align: justify;
+    background-position: top left;
+    color: transparent;
+    /*background: linear-gradient(90deg,#af2896,#509bf5);*/
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    display: inline-block;
 }
 
 div.StrategicTitle {
@@ -36,57 +42,82 @@ div.NJCSSAIMG {
     width: 20vw;
 }
 
-.navbar {
-  position: fixed;
-  height: 7vh;
-  z-index: 999;
-  /*opacity: .7;*/
-  width: 100vw;
-  background-color: black;
+/*Animation Stuff*/
+img {
+    position: relative;
 }
-.navbar .nav {
-  display: flex;
-  flex-direction: row;
+
+.slideIn {
+    animation-name: hide, slideIn;
+    animation-duration: 0.8s, 1s;
+    animation-timing-function: ease-in;
+    animation-timing-function: cubic-bezier(0.640, 0.175, 0.560, 0.660);
+    animation-iteration-count: 1;
+    opacity: 1;
 }
-@media screen and (max-width: 768px) {
-  .navbar .nav {
-    display: flex;
-    flex-direction: column;
-  }
-  .navbar .nav li {
-    width: 100vw;
-  }
-  .navbar-toggle-icon {
-    color: white !important;
-  }
+
+    .slideIn.first {
+        animation-delay: 0s, 0s;
+    }
+
+.slideUp.second {
+    animation-name: hide, slideUp;
+    animation-delay: 0s, 0.5s;
 }
-.spacer {
-  height: 7vh;
+
+.slideLeft.third {
+    animation-duration: 1s;
+    animation-name: hide, slideLeft;
+    animation-delay: 0s, 1s;
 }
-.navbar .nav li a{
-  margin-right: auto;
-  margin-left: auto;
-  width: auto;
-  padding: 3px;
-  text-align: center;
-  transition: .3s;
-  padding-left: 15px;
-  padding-right: 15px;
+
+@keyframes hide {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0;
+    }
 }
-.navbar .nav {
-  display: flex;
-  justify-content: space-around;
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        left: -30%;
+        top: 30vh;
+    }
+
+
+    100% {
+        opacity: 1;
+        left: 0;
+        top: 0;
+    }
 }
-.nav {
-  width: 100%;
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        top: 30vh;
+    }
+
+
+    100% {
+        opacity: 1;
+        top: 0;
+    }
 }
-.navbar .nav li:hover a{
-  text-decoration: none !important;
-  background-color: rgb(22,127,251);
-  color: white;
-  transition: .3s;
-}
-.nav-img {
-  height: 6vh;
-  width: auto;
+
+@keyframes slideLeft {
+    0% {
+        opacity: 0;
+        right: -40%;
+    }
+
+
+    100% {
+        opacity: 1;
+        right: 0;
+    }
 }
